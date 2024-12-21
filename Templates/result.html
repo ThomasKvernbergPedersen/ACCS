@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result ACCS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/print.css') }}" media="print">
+</head>
+<body>
+    <h1>Global Performance Rating:</h1>
+    <br>
+   
+
+
+    <div class="category-box {{ category_class }}">
+        <p> {{ category_class }}</p>
+    </div>
+    
+ <div class="personalia" >
+        <p>Therapist’s Name: {{ therapist_name }}</p> 
+        <p>Assessor’s Name: {{ assessor_name }}</p> 
+        <p>Date of Submission: {{ submission_date }}</p>
+    </div>
+    <div class="grid-container">
+        <div class="kategori">
+            <p style="font-weight: 100;">Patient Complexity Rating: <br>
+                {{patient_complexity}}</p>
+                <h4>Generic Definition of Performance Band</h4>
+                <div class="tekstbox"> 
+                    <p> {{ category }}</p>
+                    </div>
+            </div>
+            <div class="kategori">
+                <h2> Total score</h2>
+                <p class="uthevet"> {{ total_score }}</p>
+                <p>Average response: {{ average_score }} </p>
+
+            </div>
+
+            <div class="kategori">
+                <h3>Skills Profile</h3>
+                <p>Therapist learning points: <br> {{therapist_needs}}</p>
+
+                <p>Therapists strengts: <br> {{ therapist_strengths }}</p>
+
+            </div>
+
+
+
+            
+            <div class="kategori">
+                <h3>Spesific strengths and weaknesess</h3>
+                <li>Most learning potential in:  {{ min_domain }}</li>
+                <p>Feedback: <br> {{min_domain_feedback}}</p>
+                <li>Strongest:  {{ max_domain }}</li>    
+                <p>Feedback: <br> {{max_domain_feedback}}</p>     
+                
+                
+            </div>
+
+    </div>
+    <div class="nyside">
+        <h2>Graf</h2>
+        {{ bar_chart | safe }}
+    </div>
+
+    <button class="btn " onclick="window.print()">Print this page</button>
+
+    
+    <h2>Individual Item response</h2>
+    
+
+    <div class="styled-table"> {{ df_html | safe }} </div>
+    <a href="{{ url_for('index') }}">Back to form</a>
+    <button class="btn" onclick="window.location.href='/download_csv'">Download CSV</button> 
+    <button class="btn" onclick="window.location.href='/download_excel'">Download Excel</button>
+
+
+    
+    </div>
+        </div>
+        
+
+
+
+ 
+   
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer> </script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+/* Generelle stiler */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e8e9;
+    margin: 0;
+    padding: 0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CSS for the content dato navn navn*/
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+
+  
+  
+  h1, h2, h3, h4 {
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Velg en klar og lettleselig skrifttype */
+    margin-bottom: 10px; /* Legg til plass under overskrifter */
+    margin-left: 10px;
+  }
+  
+  p, li {
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Arial', sans-serif; /* Samme skrifttype for konsistens */
+    margin-bottom: 15px; /* Legg til plass under avsnitt og listeelementer */
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Indent for listeelementer */
+  }
+  
+  .highlight {
+    background-color: #e0f7fa; /* Lys bakgrunnsfarge for å fremheve viktig tekst */
+    padding: 5px;
+    border-radius: 5px; /* Runde kanter for fremhevet tekst */
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0; /* Plass over og under linje */
+  }
+  
+
+/* CSS for the form NAVN dato*/
+.form-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid #000; /* Border for the form container */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color */
+    margin-bottom: 20px; /* Margin at the bottom */
+  }
+  
+  /* Input terapi navn og dato */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*KNAPP TIl å laste ned */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .btn:active {
+    background-color: #79797a;
+    transform: scale(1);
+  }
+  
+  .btn-dark {
+    background-color: #3d6ca1;
+  }
+  
+  .btn-dark:hover {
+    background-color: #23272b;
+  }
+  
+  .btn-dark:active {
+    background-color: #1d2124;
+  }
+  
+
+
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #007BFF; /* Border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow when focused */
+  }
+  /*KRopp*/ 
+
+
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tooltip stiler */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Plassering av tooltip */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Spesifikke stiler for skåringssystemet */
+#scoring-form h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#scoring-form label {
+    margin-top: 10px;
+}
+
+#scoring-form input[type="number"] {
+    max-width: 100px;
+}
+
+#scoring-form select {
+    max-width: 200px;
+}
+
+
+#result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    text-align: center;
+}
+
+#result p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.score-box {
+    background-color: #e3e8e9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: larger;
+}
+
+
+.category-box.Limited {
+    background-color: rgb(232, 68, 31);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.category-box.Limited:hover {
+    background-color: rgb(144, 39, 15);
+}
+
+.category-box.Basic {
+    background-color: rgb(217, 157, 29);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.category-box.Basic:hover {
+    background-color: rgb(169, 106, 24);
+}
+
+.category-box.Good {
+    background-color: rgb(96, 96, 230);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.category-box.Good:hover {
+    background-color: darkblue;
+}
+
+
+.category-box.Advanced {
+    background-color: rgb(36, 155, 12);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.category-box.Advanced:hover {
+    background-color: rgb(185, 206, 20);
+}
+
+
+.category-box p {
+    color: #000;
+}
+
+
+/* CSS for the grid layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Adjust gap as needed */
+    border: 20px  #000; /* Border for the whole container */
+    padding: 10px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin: 5%;
+  }
+  
+  #domain_values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Adjust gap as needed */
+    border: 20px  #000; /* Border for the whole container */
+    padding: 10px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin: 5%;
+  }
+  
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+      grid-template-rows: auto; /* Adjust row height dynamically */
+    }
+    #domain_values {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        grid-template-rows: auto; /* Adjust row height dynamically */
+      }
+  }
+  
+  
+
+.kategori {
+    background-color: #d6d9db;
+    font-size: larger;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 2px  #333;
+    border-radius: 10%;
+
+    
+}
+
+.personalia {
+    padding: 10px;
+    margin-left: 101px;
+    text-align: start;
+    border: 2px  #333;
+    border-radius: 10%;
+  }
+
+.kategori_oppsummering {
+    background-color: #e3e8e9;
+    border: 1px solid #ccc;
+    font-size: larger;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;  
+}
+
+.chart-container {
+    width: 30%;  /* Sett bredden på diagrammet */
+    height: 10%;
+    display: block;
+}
+
+.category-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Juster etter behov */
+    width: 20vh;
+}
+
+.tekstbox {
+    width: 50%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.uthevet {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+/* print.css */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tr:hover {
+  background-color: #f1f1f1;
+}
+

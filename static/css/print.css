@@ -1,0 +1,57 @@
+/* print.css */
+
+/* Skjul elementer som ikke skal skrives ut */
+.no-print {
+    display: none;
+  }
+
+
+  /* Tilpass stiler for utskrift */
+  body {
+    font-size: 12pt;
+    margin: 10mm; /* Juster margene etter behov */
+  }
+  
+  /* Del opp innholdet for utskrift */
+  .nyside {
+    page-break-before: always; /* Sørg for at kapitler starter på ny side */
+  }
+  
+  /* Gjør tabeller enklere for utskrift */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  @page {
+    size: auto;   /* Automatiske sidestørrelser */
+    margin: 15mm; /* Juster marginene etter behov */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Adjust gap as needed */
+    border: 20px  #000; /* Border for the whole container */
+    padding: 10px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin: 5%;
+  }
+  
+  #domain_values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Adjust gap as needed */
+    border: 20px  #000; /* Border for the whole container */
+    padding: 10px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin: 5%;
+  }
