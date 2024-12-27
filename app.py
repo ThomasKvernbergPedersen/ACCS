@@ -1,4 +1,7 @@
+import os
 from flask import Flask, render_template, request, Response
+from dotenv import load_dotenv
+load_dotenv()
 import gunicorn
 import io
 import csv
