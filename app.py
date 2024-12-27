@@ -48,6 +48,7 @@ def index():
         for key, value in request.form.items():
             if key.startswith('item'):
                 data[key] = float(value)  # Konverter til float hvis verdien finnes
+                
 
 
          #NAVN og dato
