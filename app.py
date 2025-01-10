@@ -268,6 +268,10 @@ def download_excel():
     response.headers["Content-Disposition"] = "attachment; filename=responses.xlsx" 
     return response
 
+@app.route('/about') 
+def about(): 
+    return render_template('about.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 

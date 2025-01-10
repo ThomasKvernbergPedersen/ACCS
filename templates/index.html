@@ -15,59 +15,18 @@
          <h1>Assessment of Core CBT Skills (ACCS)</h1>
          <form method="POST">
 
-<div class="domain content" id="domain1" >
+<div class="domain content" id="domain1"  >
     <h3>www.accs-scale.co.uk</h3>
     <br>
     <p>Digital feedback form. A tool to develop, maintain and improve your skills as a cognitive behavioural therapist. </p>
     <p>Scale contributors: Kate Muse, Freda McManus, Sarah Rakovshik & Helen Kennerley</p>
      <p>App developer: Thomas Pedersen - <br> 
-        Feel free to contact me on mail: thomas.kvernberg.pedersen@outlook.com </p>
+        Contact: thomas.kvernberg.pedersen@outlook.com </p>
     <br> 
 
-    <div class="content"> 
-      <h3>Using the ACCS Manual</h3> 
-      <p>It is recommended that assessors spend some time reading and familiarising themselves with the ACCS manual before conducting an assessment. Initially, the manual should be consulted on an item by item basis alongside completing the feedback form. Once the assessor becomes familiar with the scale, the manual can then be used as a frame of reference which can be consulted whenever questions or uncertainties arise. It is also recommended that assessors periodically re-review the manual to prevent assessor-drift.</p>
-      <a href="http://www.accs-scale.co.uk" class="btn btn-dark" role="button" target="_blank">Download manual</a>
-    </div>
+    <button class="btn btn-dark" onclick="window.location.href='/about'">How to use the scale</button>
 
-    <div class="content">
-      <h3>Numeric Rating</h3>
-      <p>For each item assign a rating between 1 and 4. If the therapist is assessed as falling between two descriptors, the assessor can select a ½ mark (i.e. 1.5, 2.5, or 3.5). The overarching definitions of the scale are as follows:</p>
-      
-      <h3>Performance Band</h3>
-      <h3>Generic Definition of Performance Band</h3>
-      
-      <h4>Limited:</h4>
-      <ul>
-      <li>Therapist fails to include feature outlined.</li>
-      <li>Or therapist demonstrates a significant absence of skill or an inappropriate performance which is likely to have negative therapeutic consequences.</li>
-      </ul>
-      
-      <h4>Basic:</h4>
-      <ul>
-      <li>Therapist’s performance is somewhat appropriate with some degree of skill evident.</li>
-      <li>However, major substantive problems are evident.</li>
-      </ul>
-      
-      <h4>Good:</h4>
-      <ul>
-      <li>Therapist demonstrates a good degree of skill with no major problems.</li>
-      <li>However, minor problems or inconsistencies are evident in the therapist’s performance.</li>
-      </ul>
-      
-      <h4>Advanced:</h4>
-      <ul>
-      <li>Therapist consistently demonstrates a high level of skill with only very few and very minor problems.</li>
-      </ul>
-      
-      <p>Please refer to the manual for guidance as to the type of performance which is consistent with each point on the rating scale for each individual item.</p>
-      
-      <br>
-     
 
-    
-
-  </div>
 
 
   <div > 
@@ -86,7 +45,7 @@
       </div>
     </div>
     <br>
-      <button class="btn btn-dark" onclick="nextDomain(1)">Next</button>
+      <button class="btn btn-dark" onclick="nextDomain(1)">Start</button>
     </div>
   </div>
 
@@ -107,21 +66,25 @@
                     <h2>Domain 1 - Suitable Items</h2>
                     <p class="subheading">See user manual page 3 - 5</p>
             
-                    <label for="item1_1">1.1. Suitable Items:
-                        <span class="tooltip">❓<br>
+                    <label for="item1_1">1.1. Suitable Items: 
+                        <span class="tooltip"><br>
                             
-                            <span class="tooltiptext">Ability to help the patient identify and prioritise specific, relevant and appropriate agenda items.</span>
+                            <span class="tooltiptext"></span>
                         </span>
-                        <h3 style="color: #007BFF;">ProTip: Press or hover mouse over question mark for more details &#8593;</h3>
+                        
                     </label>
+                    <p>Ability to help the patient identify and prioritise specific, relevant and appropriate agenda items.</p>
                     <input type="number" id="item1_1" name="item1_1" min="1" max="4" step="0.5" required>
+                    <br>
 
             
-                    <label for="item1_2">1.2. Feasible Agenda:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to set an agenda which is realistic and feasible given the time available.</span>
+                    <label for="item1_2">1.2. Feasible Agenda: 
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
+                        
                     </label>
+                    <p>Ability to set an agenda which is realistic and feasible given the time available.</p>
                     <input type="number" id="item1_2" name="item1_2" min="1" max="4" step="0.5" required>
                     <textarea id="strengths1_1" name="strengths1_1" placeholder="Key strengths and learning needs"></textarea>
                     <button class="btn btn-dark" type="button" onclick="prevDomain(2)">Back</button>
@@ -133,10 +96,12 @@
                     <p class="subheading">See user manual page 8</p>
 
                     <label for="item2_1">2.1. Coherent and Dynamic Formulation:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to develop a clear formulation which draws upon appropriate evidence-based theory to offer a concise, comprehensive and personalised explanation of relevant history, triggers and maintaining features of the patient’s problems.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to develop a clear formulation which draws upon appropriate evidence-based theory to offer a concise, comprehensive and personalised explanation of relevant history, triggers and maintaining features of the patient’s problems.</p>
+                    
                     <input type="number" id="item2_1" name="item2_1" min="1" max="4" step="0.5" required>
                     <textarea id="strengths2_1" name="strengths2_1" placeholder="Key strengths and learning needs"></textarea>  
 
@@ -150,40 +115,45 @@
                     <p class="subheading">See user manual page 9 - 13</p>
             
                     <label for="item3_1">3.1. Appropriate Intervention Targets:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to skilfully define, clarify and specify intervention targets which both relevant evidence-based theory and the patient’s idiosyncratic formulation suggested were highly likely to be maintaining problems.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to skilfully define, clarify and specify intervention targets which both relevant evidence-based theory and the patient’s idiosyncratic formulation suggested were highly likely to be maintaining problems.</p>
                     <input type="number" id="item3_1" name="item3_1" min="1" max="4" step="0.5" required>
 
             
                     <label for="item3_2">3.2. Choosing Suitable Interventions:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to select cognitive-behavioural interventions which form part of a logical, coherent and unified treatment strategy which is likely to bring about therapeutic change in the treatment target(s) and is suited to the patient’s therapeutic context. This selection was accurately guided by appropriate theory-based practice or practice based on evidence when possible.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to select cognitive-behavioural interventions which form part of a logical, coherent and unified treatment strategy which is likely to bring about therapeutic change in the treatment target(s) and is suited to the patient’s therapeutic context. This selection was accurately guided by appropriate theory-based practice or practice based on evidence when possible.</p>
                     <input type="number" id="item3_2" name="item3_2" min="1" max="4" step="0.5" required>
             
                     <label for="item3_3">3.3. Rationale for Interventions:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to facilitate the patient’s understanding of the importance and potential benefits of interventions.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to facilitate the patient’s understanding of the importance and potential benefits of interventions.</p>
                     <input type="number" id="item3_3" name="item3_3" min="1" max="4" step="0.5" required>
 
                     <label for="item3_4">3.4. Implementing Interventions:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to systematically implement intervention(s) in a fluent and articulate manner. To be sensitive and responsive to the therapeutic context and provide optimal levels of support, encouragement and praise.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to systematically implement intervention(s) in a fluent and articulate manner. To be sensitive and responsive to the therapeutic context and provide optimal levels of support, encouragement and praise.</p>
                     <input type="number" id="item3_4" name="item3_4" min="1" max="4" step="0.5" required>
 
             
                     <label for="item3_5">3.5. Reviewing Interventions:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to conduct a comprehensive review of the results of interventions (whether positive or negative) in order to help the patient identify what they learned from the experience.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to conduct a comprehensive review of the results of interventions (whether positive or negative) in order to help the patient identify what they learned from the experience.</p>
                     <input type="number" id="item3_5" name="item3_5" min="1" max="4" step="0.5" required>
                     <textarea id="strengths3_1" name="strengths3_1" placeholder="Key strengths and learning needs"></textarea>
                     
@@ -197,34 +167,38 @@
                     <p class="subheading">See user manual page 14 - 17</p>
             
                     <label for="item4_1">4.1. Reviewing Homework:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to conduct a comprehensive review of previous homework (whether completed or not) in order to help the patient identify what they learned from the experience.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to conduct a comprehensive review of previous homework (whether completed or not) in order to help the patient identify what they learned from the experience.</p>
                     <input type="number" id="item4_1" name="item4_1" min="1" max="4" step="0.5" required>
 
             
                     <label for="item4_2">4.2. Choosing Suitable Homework:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to plan homework which is tailored to the therapeutic context and builds upon session material or previous homework.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to plan homework which is tailored to the therapeutic context and builds upon session material or previous homework.</p>
                     <input type="number" id="item4_2" name="item4_2" min="1" max="4" step="0.5" required>
 
             
                     <label for="item4_3">4.3. Rationale for Homework:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to facilitate the patient’s understanding of the importance and potential benefits of homework.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to facilitate the patient’s understanding of the importance and potential benefits of homework.</p>
                     <input type="number" id="item4_3" name="item4_3" min="1" max="4" step="0.5" required>
 
             
                     <label for="item4_4">4.4. Planning Homework:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to work with the patient to ensure they have a clear and detailed understanding of the homework task(s).</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to work with the patient to ensure they have a clear and detailed understanding of the homework task(s).</p>
                     <input type="number" id="item4_4" name="item4_4" min="1" max="4" step="0.5" required>
                     <textarea id="strengths4_1" name="strengths4_1" placeholder="Key strengths and learning needs"></textarea>
                     
@@ -239,18 +213,20 @@
                     <p class="subheading">See user manual page 18 - 20</p>
             
                     <label for="item5_1">5.1. Choosing Suitable Measures:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to select appropriate, clinically relevant standardised and/or idiosyncratic methods for measuring change in symptoms and associated features (beliefs, behaviours, feelings) and movement towards goals.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to select appropriate, clinically relevant standardised and/or idiosyncratic methods for measuring change in symptoms and associated features (beliefs, behaviours, feelings) and movement towards goals.</p>
                     <input type="number" id="item5_1" name="item5_1" min="1" max="4" step="0.5" required>
 
             
                     <label for="item5_2">5.2. Implementing Measures:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to administer measures at suitable time points across and within session and to skilfully review, interpret and respond to the information gleaned.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to administer measures at suitable time points across and within session and to skilfully review, interpret and respond to the information gleaned.</p>
                     <input type="number" id="item5_2" name="item5_2" min="1" max="4" step="0.5" required>
                     <textarea id="strengths5_1" name="strengths5_1" placeholder="Key strengths and learning needs"></textarea>
             
@@ -267,26 +243,29 @@
                     <p class="subheading">See user manual page 21 - 23</p>
             
                     <label for="item6_1">6.1. Pace:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to pace the session in a manner which is well suited to the therapeutic context and patient’s capacity for learning.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to pace the session in a manner which is well suited to the therapeutic context and patient’s capacity for learning.</p>
                     <input type="number" id="item6_1" name="item6_1" min="1" max="4" step="0.5" required>
 
             
                     <label for="item6_2">6.2. Time Management:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to manage time within the session in a balanced and efficient manner.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to manage time within the session in a balanced and efficient manner.</p>
                     <input type="number" id="item6_2" name="item6_2" min="1" max="4" step="0.5" required>
 
             
                     <label for="item6_3">6.3. Maintained Focus:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to maintain focus on important issues, whilst demonstrating appropriate flexibility in response to unanticipated issues.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to maintain focus on important issues, whilst demonstrating appropriate flexibility in response to unanticipated issues.</p>
                     <input type="number" id="item6_3" name="item6_3" min="1" max="4" step="0.5" required>
                     <textarea id="strengths6_1" name="strengths6_1" placeholder="Key strengths and learning needs"></textarea>
                     
@@ -300,26 +279,29 @@
                     <p class="subheading">See user manual page 24 - 26</p>
             
                     <label for="item7_1">7.1. Interpersonal Style:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to embody a positive interpersonal style which is congruent with the therapeutic context.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to embody a positive interpersonal style which is congruent with the therapeutic context.</p>
                     <input type="number" id="item7_1" name="item7_1" min="1" max="4" step="0.5" required>
 
             
                     <label for="item7_2">7.2. Empathic Understanding:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to accurately grasp the content and emotional tone of the patient’s viewpoint (i.e. their understanding of themselves and the world around them) and to sensitively and appropriately convey this understanding.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to accurately grasp the content and emotional tone of the patient’s viewpoint (i.e. their understanding of themselves and the world around them) and to sensitively and appropriately convey this understanding.</p>
                     <input type="number" id="item7_2" name="item7_2" min="1" max="4" step="0.5" required>
 
             
                     <label for="item7_3">7.3. Collaboration:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to encourage the patient to take an active role in and to share responsibility for all aspects of the session in a manner suited to the stage of therapy and patient’s presentation.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to encourage the patient to take an active role in and to share responsibility for all aspects of the session in a manner suited to the stage of therapy and patient’s presentation.</p>
                     <input type="number" id="item7_3" name="item7_3" min="1" max="4" step="0.5" required>
                     <textarea id="strengths7_1" name="strengths7_1" placeholder="Key strengths and learning needs"></textarea>
 
@@ -333,18 +315,20 @@
                     <p class="subheading">See user manual page 27 - 29</p>
                     
                     <label for="item8_1">8.1. Patient Feedback:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to elicit, explore and respond to feedback about the patient’s understanding of and reaction to all aspects of session.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to elicit, explore and respond to feedback about the patient’s understanding of and reaction to all aspects of session.</p>
                     <input type="number" id="item8_1" name="item8_1" min="1" max="4" step="0.5" required>
 
                     
                     <label for="item8_2">8.2. Reflective Summaries:
-                        <span class="tooltip">❓
-                            <span class="tooltiptext">Ability to work with the patient to reflect upon and summarise salient session content in order to facilitate joint understanding of crucial therapeutic material and consolidate key learning.</span>
+                        <span class="tooltip">
+                            <span class="tooltiptext"></span>
                         </span>
                     </label>
+                    <p>Ability to work with the patient to reflect upon and summarise salient session content in order to facilitate joint understanding of crucial therapeutic material and consolidate key learning.</p>
                     <input type="number" id="item8_2" name="item8_2" min="1" max="4" step="0.5" required>
                     <textarea id="strengths8_1" name="strengths8_1" placeholder="Key strengths and learning needs"></textarea>
                     
